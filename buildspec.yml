@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo "Entered the install phase."
-      - pip3 install pandas
+      - pip3 install pandas numpy
 
   pre_build:
     commands:
@@ -12,8 +12,8 @@ phases:
 
   build:
     commands:
-      - echo echo "Entered the build phase."
-      - python sample.py
+      - echo "Entered the build phase."
+      - python sample_code.py
 
   post_build:
     commands:
